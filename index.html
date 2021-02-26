@@ -5,56 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>The CF Weekly</title>
 </head>
 
 <body>
-    <header>
-        <div><img class="logo" src="img\logo-newspaper-cf.png" alt="Logo Newspaper"></div>
-        <div><img class="vienna" src="img\banner-1.png" alt="Fullstack Vienna"></div>
-    </header>
-    <nav>
-        <ul class="navtop">
-            <li>Home</li>
-            <li>Tech</li>
-            <li>Culture</li>
-            <li>Video</li>
-        </ul>
-    </nav>
-    <!--Used inline styling here so it wont take up space in my scss/css file-->
-    <p class="timedate"><span style="border: solid black;">Date: <span id="datetime">
-                <!-- I found this script online to show the current date. I did it for fun-->
-                <script>
-                    var dt = new Date();
-                    document.getElementById("datetime").innerHTML = dt.toDateString();
-                </script>
-            </span></span></p>
-    <main>
-        <article>
-            <div class="topnews">
-                <div class="topnewsh2" style="background-color: gray; height: 2.5vw;">
-                    <p style="font-size: 2vw;">Top News</p>
-                </div>
-                <div class="topnewsimgs">
-                    <div class="imgtext"><img class="images" src="img\jeff.png" alt="Jeff Bezos">
-                        <p>If money could talk Jeff Bezos would be deaf</p>
-                    </div>
+    <div class="container" style="background-color: lightgrey" ;>
+        <header>
 
-                    <div class="imgtext"><img class="images" src="img\eu.png" alt="eu">
-                        <p>10 ways to keep your files safe</p>
-                    </div>
+            <div><img class="logo" src="img\logo-newspaper-cf.png" alt="Logo Newspaper"></div>
+            <div><img class="vienna" src="img\banner-1.png" alt="Fullstack Vienna"></div>
+        </header>
+        <nav>
+            <ul class="navtop">
+                <li>Home</li>
+                <li>Tech</li>
+                <li>Culture</li>
+                <li>Video</li>
+            </ul>
+        </nav>
+        <main>
+            <!--Used inline styling here so it wont take up space in my scss/css file-->
+            <p class="timedate"><span style="border: solid black;">Date: <span id="datetime">
+                        <!-- I found this script online to show the current date. I did it for fun-->
+                        <script>
+                            var dt = new Date();
+                            document.getElementById("datetime").innerHTML = dt.toDateString();
+                        </script>
+                    </span></span></p>
 
-                    <div class="imgtext"><img class="images" src="img\phone.png" alt="phone">
-                        <p>Spotify is about to revolutionize the music industry</p>
-                    </div>
-
-                </div>
+            <div class="topnews" style="background-color: gray; height: 3vw; padding-left: 5vw;">
+                <p style="font-size: 2vw;">Top News</p>
             </div>
-        </article>
-        <article>
-        </article>
+            <article class="articles">
+                <!-- <div class="topnewsimgs"> -->
+                <div class="imgtext"><img class="images" src="img\jeff.png" alt="Jeff Bezos">
+                    <p>If money could talk Jeff Bezos would be deaf</p>
+                </div>
+
+                <div class="imgtext"><img class="images" src="img\eu.png" alt="eu">
+                    <p>10 ways to keep your files safe</p>
+                </div>
+
+                <div class="imgtext"><img class="images" src="img\phone.png" alt="phone">
+                    <p>Spotify is about to revolutionize the music industry</p>
+                </div>
+                <!-- </div> -->
+            </article>
+            <div class="item-head" style="background-color: gray; height: 3vw; font-size: 2vw; padding-left: 5vw;">
+                <p>Popular</p>
+            </div>
+            <article class="articles">
+
+                <div class="imgtext"><img class="images" src="img\iphone.png" alt="Iphone">
+                    <p>Apple-Fans should not read this article...</p>
+                </div>
+                <div class="imgtext"><img class="images" src="img\one.png" alt="Headphones">
+                    <p>These headphones are literally indestructible</p>
+                </div>
+                <div class="imgtext"><img class="images" src="img\musk.jpg" alt="Elon Musk">
+                    <p>The newest Elon Musk memes</p>
+                </div>
+
+            </article>
+            <div class="banner" style="text-align: center;">
+                <a href="https://www.codefactory.wien">
+
+                    <figure><img src="img\banner-3.png" alt="Banner" style="width: 80%;"></figure>
+
+                </a>
+            </div>
+    
+    <article class="articles2">
+        <div class="imgtext2"><img class="images2" src="img\polar.png" alt="Polar-Watch">
+            <p>Polar's new watches can take you back in time</p>
+        </div>
+        <div class="imgtext2"><img class="images2" src="img\nasa.png" alt="ISS">
+            <p>The ISS is slowly drifting away from earth</p>
+        </div>
+    </article>
+    <article class="articles2">
+        <div class="imgtext2"><img class="images2" src="img\smart.png" alt="Powerstrip">
+            <p>These new powerstrips reduce your power consumption</p>
+        </div>
+        <div class="imgtext2"><img class="images2" src="img\snowden.jpg" alt="Snowden">
+            <p>JavaScript just found it's biggest competitor</p>
+        </div>
+
+    </article>
     </main>
+    </div>
     <footer>
         <div class="footer1">
             <nav>
@@ -70,6 +110,7 @@
         <p style="text-align: center; font-size: 1.5vw;">Samuel Tenschert &#169; CodeFactory 2021</p>
         <!--Used inline styling here so it wont take up space in my scss/css file-->
     </footer>
+
 </body>
 
 </html>
