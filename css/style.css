@@ -144,6 +144,7 @@ header .vienna {
 
 main {
   padding: 0 5vw;
+  background-color: lightskyblue;
 }
 
 .breakline {
@@ -156,24 +157,23 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f2f2f3;
-  height: 3vw;
+  background-color: lightgrey;
+  height: 5vw;
   font-size: 2vw;
-  padding-left: 5vw;
   font-weight: bold;
-  border: solid;
+  border-style: double;
 }
 
 .images {
-  width: 20vw;
-  height: 20vw;
+  width: 25vw;
+  height: 25vw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1vw 1vw 0 0;
 }
 
 .images2 {
-  width: 30vw;
+  width: 40vw;
   height: 30vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -186,6 +186,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -205,7 +208,7 @@ main {
 .imgtext {
   border-radius: 1vw;
   text-align: justify;
-  width: 20vw;
+  width: 25vw;
   font-size: 1.5vw;
   background-color: #9c4343;
   color: white;
@@ -218,8 +221,8 @@ main {
 .imgtext2 {
   border-radius: 1vw;
   text-align: justify;
-  width: 30vw;
-  font-size: 1.5vw;
+  width: 40vw;
+  font-size: 2vw;
   background-color: #9c4343;
   color: white;
   text-align: center;
