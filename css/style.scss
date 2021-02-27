@@ -1,3 +1,4 @@
+// Because of personal reasons i had to finish way before 5pm on saturday so i had no time to properly order my sass and commented it like I would normally do and i apologize in advance for that. I am aware of sass's tricks to shorten my code (for example i could have made extra files [e.g. _imgtext,_img,_aritcles] for my different sections of my index.html and then i could have imported them into my main style.scss)
 @media screen and (max-width: 480px) {
     .header {
         display: flex;
@@ -227,4 +228,3 @@ footer {
 .developer {
     text-align: center;
 }
-@import "article";
