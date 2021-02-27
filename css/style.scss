@@ -49,12 +49,12 @@
     .images {
     width: 90vw !important;
     height: 50vw !important;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: .6vw .6vw 0 0;
     }
     .images2 {
     width: 90vw !important;
     height: 50vw !important;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: .6vw .6vw 0 0;
     }
     .footer1 {
         display: flex;
@@ -63,9 +63,16 @@
          ul {
              padding-bottom: 1vw;
          }
-        }
+    }
+.developer {
+    .banner {
+        display: none;
+    }
 }
-// Media Query over
+}
+
+                                                // Media Query over
+
 * {
     margin: 0;
     padding: 0;
@@ -91,12 +98,16 @@ header {
     list-style-type: none;
     background-color: #0E0D0D;
     display: flex;
-    li {
-        color: #ECECEC;
+}
+li {
         font-size: 2vw;
         margin: 1vw;
-    }
+        a {
+            text-decoration: none;
+            color: #ECECEC;
+        }
 }
+
 .timedate {
     padding: 2vw 0 2vw 0;
     font-size: 2vw;
@@ -120,13 +131,13 @@ main {
     width: 25vw;
     height: 25vw;
     object-fit: cover;
-    border-radius: 1vw 1vw 0 0;  
+    border-radius: .7vw .7vw 0 0;  
 }
 .images2 {
     width: 40vw;
     height: 30vw;
     object-fit: cover;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: .7vw .7vw 0 0;
 }
 .articles2 {
     display: flex;
@@ -140,19 +151,24 @@ main {
     justify-content: space-between;
 }
 .imgtext {
+    border-style: ridge;
     border-radius: 1vw;
     text-align: justify;
     width: 25vw;
     font-size: 1.5vw;
     background-color: rgb(156, 67, 67);
-    color: white;
     text-align: center;
     margin: 4vw 0 4vw 0;
     -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.85);
     -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.85);
     box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.85);
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 .imgtext2 {
+    border-style: ridge;
     border-radius: 1vw;
     text-align: justify;
     width: 40vw;
@@ -164,7 +180,12 @@ main {
     -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.85);
     -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.85);
     box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.85);
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
+
 footer {
     background-color: black;
     color: white;
@@ -193,13 +214,17 @@ footer {
         font-size: 1.5vw;
     }
 }
-.banner figure img {
+.developer figure img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.banner figure:hover img {
+.developer figure:hover img {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+.developer {
+    text-align: center;
+}
+@import "article";

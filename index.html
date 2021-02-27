@@ -16,14 +16,15 @@
     </header>
     <nav>
         <ul class="navtop">
-            <li>Home</li>
-            <li>Tech</li>
-            <li>Culture</li>
-            <li>Video</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="article.html">Articles</a></li>
         </ul>
     </nav>
     <main>
-        <!--Used inline styling here so it wont take up space in my scss/css file, i hope that's ok-->
+        <!--I used inline styling here because giving this span a class and targeting it with sass didn't seem to work-->
         <p class="timedate"><span style="border-style: double; background-color: lightgray;">Date: <span id="datetime">
                     <!-- I found this script online to show the current date. I did it for fun-->
                     <script>
@@ -31,81 +32,84 @@
                         document.getElementById("datetime").innerHTML = dt.toDateString();
                     </script>
                 </span></span></p>
-
         <div class="breakline">
-                <p>Top News</p>
+            <p>Top News</p>
         </div>
         <article class="articles">
-            <!-- <div class="topnewsimgs"> -->
-            <div class="imgtext"><img class="images" src="img\jeff.png" alt="Jeff Bezos">
-                <p>If money could talk Jeff Bezos would be deaf</p>
+            <div class="imgtext"><a href="article.html"><img class="images" src="img\jeff.png" alt="Jeff Bezos">
+                    <p>If money could talk Jeff Bezos would be deaf</p>
+                </a>
             </div>
-
-            <div class="imgtext"><img class="images" src="img\eu.png" alt="eu">
-                <p>10 ways to keep your files safe</p>
+            <div class="imgtext"><a href="article.html"><img class="images" src="img\eu.png" alt="eu">
+                    <p>10 ways to keep your files safe</p>
+                </a>
             </div>
-
-            <div class="imgtext"><img class="images" src="img\phone.png" alt="phone">
-                <p>Spotify is about to revolutionize the music industry</p>
+            <div class="imgtext"><a href="article.html"><img class="images" src="img\phone.png" alt="phone">
+                    <p>Spotify is about to revolutionize the music industry</p>
+                </a>
             </div>
-            <!-- </div> -->
         </article>
         <div class="breakline">
             <p>Popular</p>
         </div>
         <article class="articles">
-
-            <div class="imgtext"><img class="images" src="img\iphone.png" alt="Iphone">
-                <p>Apple-Fans should not read this article...</p>
+            <div class="imgtext"><a href="article.html"><img class="images" src="img\iphone.png" alt="Iphone">
+                    <p>Apple-Fans should not read this article</p>
+                </a>
             </div>
-            <div class="imgtext"><img class="images" src="img\one.png" alt="Headphones">
-                <p>These headphones are literally indestructible</p>
+            <div class="imgtext"><a href="article.html"><img class="images" src="img\one.png" alt="Headphones">
+                    <p>These headphones are literally indestructible</p>
+                </a>
             </div>
-            <div class="imgtext"><img class="images" src="img\musk.jpg" alt="Elon Musk">
-                <p>The newest Elon Musk memes</p>
+            <div class="imgtext"><a href="article.html"><img class="images" src="img\musk.jpg" alt="Elon Musk">
+                    <p>Elon-Musk-Meme of the week</p>
+                </a>
             </div>
 
         </article>
-        <div class="banner" style="text-align: center;">
+        <div class="developer">
             <a href="https://www.codefactory.wien">
 
                 <figure>
-                    <img src="img\banner-3.png" alt="Banner" 
-                    style="width: 80%;">
-                    <!-- Again inline i hope that's ok -->
+                    <img class="banner" src="img\banner-3.png" alt="Banner" style="width: 80%;">
+                    <!-- A short inline styling with only one style, i hope that is ok-->
                 </figure>
 
             </a>
         </div>
-
         <article class="articles2">
-            <div class="imgtext2"><img class="images2" src="img\polar.png" alt="Polar-Watch">
-                <p>This new watche can take you back in time</p>
+            <div class="imgtext2"><a href="article.html"><img class="images2" src="img\polar.png" alt="Polar-Watch">
+                    <p>This new watche can take you back in time</p>
+                </a>
             </div>
-            <div class="imgtext2"><img class="images2" src="img\nasa.png" alt="ISS">
-                <p>The ISS is slowly drifting away from earth</p>
+            <div class="imgtext2"><a href="article.html"><img class="images2" src="img\nasa.png" alt="ISS">
+                    <p>The ISS is slowly drifting away from earth</p>
+                </a>
             </div>
         </article>
         <article class="articles2">
-            <div class="imgtext2"><img class="images2" src="img\smart.png" alt="Powerstrip">
-                <p>These new powerstrips reduce your power consumption</p>
+            <div class="imgtext2"><a href="article.html"><img class="images2" src="img\smart.png" alt="Powerstrip">
+                    <p>These new powerstrips reduce your power consumption</p>
+                </a>
             </div>
-            <div class="imgtext2"><img class="images2" src="img\snowden.jpg" alt="Snowden">
-                <p>JavaScript just found it's biggest competitor</p>
+            <div class="imgtext2"><a href="article.html"><img class="images2" src="img\snowden.jpg" alt="Snowden">
+                    <p>JavaScript just found it's biggest competitor</p>
+                </a>
             </div>
         </article>
     </main>
     <footer>
         <div class="footer1">
             <div>
-            <nav>
-                <ul class="navbottom">
-                    <li>Home</li>
-                    <li>Tech</li>
-                    <li>Culture</li>
-                    <li>Video</li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul class="navbottom">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tech.html">Tech</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="article.html">Articles</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <img class="logo" src="img\logo-newspaper-cf.png" alt="Logo Newspaper">

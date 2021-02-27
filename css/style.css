@@ -67,12 +67,12 @@
   .images {
     width: 90vw !important;
     height: 50vw !important;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: .6vw .6vw 0 0;
   }
   .images2 {
     width: 90vw !important;
     height: 50vw !important;
-    border-radius: 1vw 1vw 0 0;
+    border-radius: .6vw .6vw 0 0;
   }
   .footer1 {
     display: -webkit-box;
@@ -86,6 +86,9 @@
   }
   .footer1 ul {
     padding-bottom: 1vw;
+  }
+  .developer .banner {
+    display: none;
   }
 }
 
@@ -130,10 +133,14 @@ header .vienna {
   display: flex;
 }
 
-.navtop li {
-  color: #ECECEC;
+li {
   font-size: 2vw;
   margin: 1vw;
+}
+
+li a {
+  text-decoration: none;
+  color: #ECECEC;
 }
 
 .timedate {
@@ -169,7 +176,7 @@ main {
   height: 25vw;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 1vw 1vw 0 0;
+  border-radius: .7vw .7vw 0 0;
 }
 
 .images2 {
@@ -177,7 +184,7 @@ main {
   height: 30vw;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 1vw 1vw 0 0;
+  border-radius: .7vw .7vw 0 0;
 }
 
 .articles2 {
@@ -206,19 +213,25 @@ main {
 }
 
 .imgtext {
+  border-style: ridge;
   border-radius: 1vw;
   text-align: justify;
   width: 25vw;
   font-size: 1.5vw;
   background-color: #9c4343;
-  color: white;
   text-align: center;
   margin: 4vw 0 4vw 0;
   -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.85);
 }
 
+.imgtext a {
+  text-decoration: none;
+  color: white;
+}
+
 .imgtext2 {
+  border-style: ridge;
   border-radius: 1vw;
   text-align: justify;
   width: 40vw;
@@ -229,6 +242,11 @@ main {
   margin: 4vw 0 4vw 0;
   -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.85);
   box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.85);
+}
+
+.imgtext2 a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -281,15 +299,19 @@ footer img {
   font-size: 1.5vw;
 }
 
-.banner figure img {
+.developer figure img {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
-.banner figure:hover img {
+.developer figure:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.developer {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
